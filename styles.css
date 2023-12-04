@@ -1,0 +1,87 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+    box-sizing: border-box;
+}
+
+
+#instructions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#instructions p {
+    margin: 5px 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00ff00; /* Puedes ajustar el color según tu preferencia */
+}
+
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 4px; /* Espacio entre los cuadrados */
+}
+
+.square {
+    aspect-ratio: 1;
+    width: 40px; /* Tamaño de los cuadrados */
+    height: 40px;
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: #eef35a;
+    border: none;
+    color: white;
+    padding: 10px; /* Añade espacio interno al botón */
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.emptySquare {
+    background-color: #9396c9;
+}
+
+.snakeSquare {
+    background-color: #126e00;
+    border: 1px solid #000;
+}
+
+.foodSquare {
+    background-color: #f38033;
+    border: 1px solid #000;
+}
+
+.snakeHead {
+    background-color: #00ff00; /* Cambia el color a tu elección (#00ff00 es verde) */
+    border: 1px solid #000;
+}
